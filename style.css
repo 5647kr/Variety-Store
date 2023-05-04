@@ -1,0 +1,326 @@
+/* reset css */
+body {
+  font-size: 10px;
+  font-family: 'East Sea Dokdo', cursive;
+  background-image: url("./img/dark_wood_bg1.jpg");
+  background-size: cover;
+}
+body, h1, h2, h3, h4, h5, h6, p, button, ul, li {
+  padding: 0;
+  margin: 0;
+}
+ul, li {
+  list-style: none;
+}
+button {
+  border: initial;
+  background-color: initial;
+  font: inherit;
+}
+/* [!]버튼 활성화일 경우만 커서를 포인터로 변경합니다 */
+button:enabled {
+  cursor: pointer;
+}
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+/* /reset css */
+
+/* layout */
+#container-wrapper {
+  margin: 70px auto;
+  width: 780px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+#item-wrap {
+  padding: 40px;
+  /* box-shadow: inset 0 0 10px red; */
+  background: url(./img/section3-1.png) no-repeat 0 0 / 100% 100%;
+}
+/* /layout */
+h1 {
+  /* background-image: url(./img/main-header.png);
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+  background-size: 400px 200px; */
+  background: url(./img/main-header.png) no-repeat 50% 70% / 400px 200px;
+  /* color: #fff; */
+  font-size: 8.5em;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* shopping-container */
+#shopping-container {
+  padding: 20px;
+  box-sizing: border-box;
+  /* background-color: #D4B9A0; */
+  border-radius: 10px;
+  /* box-shadow: inset 0 0 10px yellowgreen; */
+}
+#shopping-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 4em;
+}
+#shopping-container ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.item-btn {
+  background-color: #C6A175;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px ;
+  padding: 10px;
+  position: relative;
+}
+.item-btn div {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #B9824F;
+}
+.item-btn img {
+  width: 42px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.item-btn p,
+.item-btn span {
+  font-size: 2em;
+}
+.item-name {
+  display: block;
+}
+.sold-out {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.sold-out strong {
+  display: inline-block;
+  color: #eae8fe;
+  border: 6px double #eae8fe;
+  padding: 0 8px;
+  transform: rotate(-20deg) translate(-10px, 30px);
+}
+/* /shopping-container */
+
+/* purchase-wrap layout */
+#purchase-wrap {
+  display: grid;
+  grid-template-rows: .5fr 3fr 3fr;
+  gap: 10px;
+  padding: 40px;
+  /* box-shadow: inset 0 0 10px orange; */
+  background: url(./img/section3-1.png) no-repeat 0 0 / 100% 100%;
+}
+#my-money {
+  /* box-shadow: inset 0 0 10px darkblue; */
+  background-color: #D4B9A0;
+  border-radius: 10px;
+  /* width: 100%; */
+}
+#shopping-list,
+#pocket-list {
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #D4B9A0;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+#shopping-list {
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: inset 0 0 10px skyblue; */
+  /* width: 100%; */
+}
+h2 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.money {
+  margin-bottom: 0;
+}
+/* /purchase-wrap layout */
+
+/* my-money */
+#my-money {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#my-money p {
+  font-size: 2em;
+}
+/* /my-money */
+
+/* shopping-list */
+#shopping-list ul {
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #C6A175;
+  /* box-shadow: inset 0 0 10px greenyellow; */
+  overflow-y: auto;
+  height: 129px;
+}
+.shopped-list {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #B9824F;
+  /* box-shadow: inset 0 0 10px darkgreen; */
+  width: 100%;
+  position: relative;
+}
+.shopped-list:not(:last-child) {
+  margin-bottom: 10px;
+}
+.shopped-list img {
+  width: 32px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.shopped-list p {
+  font-size: 2em;
+  margin-left: 20px;
+}
+.shopped-list input {
+  border: 1px solid;
+  font-family: inherit;
+  font-size: 2em;
+  background-color: transparent;
+  width: 30px;
+}
+.shopped-list-count,
+.shopped-list-price {
+  font-size: 1.6em;
+  position: absolute;
+}
+.shopped-list-count {
+  left: 46%;
+}
+.shopped-list-price {
+  left: 70%;
+}
+.list-count-ctrl {
+  position: absolute;
+  left: 56%;
+}
+/* 텍스트 위치 고정시킬 방법 생각하기 */
+
+.cancel-btn {
+  font-size: 2em;
+  position: absolute;
+  right: 6px;
+}
+.purchase-btn {
+  /* box-shadow: inset 0 0 10px black; */
+  font-size: 2.5em;
+  margin-top: auto;
+  background-color: #C6A175;
+}
+.purchase-btn:active {
+  background-color: #B9824F;
+}
+/* /shopping-list */
+
+/* pocket-list */
+#pocket-list {
+  position: relative;
+}
+#pocket-list .all-sel {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 2em;
+  padding: 5px;
+  /* box-shadow: inset 0 0 10px black; */
+  background-color: #C6A175;
+}
+#pocket-list .all-sel:active {
+  background-color: #B9824F;
+}
+#pocket-list ul {
+  box-sizing: border-box;
+  /* box-shadow: inset 0 0 10px orange; */
+  height: 170px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: .5fr; /* 이거 문제였음 기록할 것! */
+  gap: 12px;
+  overflow-y: auto;
+  background-color: #C6A175;
+}
+.pocket-item-list {
+  width: 74%;
+  background-color: #B9824F;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px ;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.pocket-item-list div {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C6A175;
+}
+.pocket-item-img {
+  width: 32px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.pocket-item-list p,
+.pocket-item-list button {
+  font-size: 1.5em;
+}
+/* /pocket-list */
+
+
+/* 
+추가할것
+1. 품절 하나 넣기
+2. 주문목록 li의 요소들의 위치 고정시키기
+2.1 주문목록 li의 요소 글자크기 키우기
+2.2 주문목록 li의 갯수 화살표로 제어하기
+3. 주머니 아이템이 4개 이하일때 높이값 고정시키기
+*/

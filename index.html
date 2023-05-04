@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+  <title>Variety-Store</title>
+</head>
+<body>
+  <header>
+    <h1>잡화점</h1>
+  </header>
+  <main id="container-wrapper">
+    <section id="item-wrap">
+      <div id="shopping-container">
+        <h2 class="a11y-hidden">목록</h2>
+        <ul>
+          <li class="item-list">
+            <button class="item-btn" type="button">
+              <img class="item-img" src="./img/회복약.png" alt="">
+              <span class="item-name">회복약</span>
+              <span class="item-price">800G</span>
+              <div class="item-count">8</div>
+            </button>
+          </li>
+          <li class="item-list">
+            <button class="item-btn" type="button">
+              <img class="item-img" src="./img/해독약.png" alt="">
+              <span class="item-name">해독약</span>
+              <span class="item-price">600G</span>
+              <div class="item-count">8</div>
+            </button>
+          </li>
+          <li class="item-list">
+            <button class="item-btn" type="button">
+              <img class="item-img" src="./img/귀인약.png" alt="">
+              <span class="item-name">귀인약</span>
+              <span class="item-price">670G</span>
+              <div class="item-count">10</div>
+            </button>
+          </li>
+          <li class="item-list">
+            <button class="item-btn" type="button">
+              <img class="item-img" src="./img/경화약.png" alt="">
+              <span class="item-name">경화약</span>
+              <span class="item-price">580G</span>
+              <div class="item-count">10</div>
+            </button>
+          </li>
+          <li class="item-list">
+            <button class="item-btn" type="button">
+              <img class="item-img" src="./img/강주약.png" alt="">
+              <span class="item-name">강주약</span>
+              <span class="item-price">290G</span>
+              <div class="item-count">10</div>
+            </button>
+          </li>
+          <li class="item-list">
+            <button class="item-btn" type="button">
+              <img class="item-img" src="./img/영양제.png" alt="">
+              <span class="item-name">영양제</span>
+              <span class="item-price">250G</span>
+              <div class="item-count">10</div>
+            </button>
+          </li>
+          <li class="item-list">
+            <button class="item-btn" type="button">
+              <img class="item-img" src="./img/생고기.png" alt="">
+              <span class="item-name">생고기</span>
+              <span class="item-price">200G</span>
+              <div class="item-count">10</div>
+            </button>
+          </li>
+          <li class="item-list">
+            <button class="item-btn" type="button">
+              <img class="item-img" src="./img/덜익은-고기.png" alt="">
+              <span class="item-name">덜익은 고기</span>
+              <span class="item-price">300G</span>
+              <span class="sold-out">
+                <strong>soldout</strong>
+              </span>
+              <div class="item-count">0</div>
+            </button>
+          </li>
+          <li class="item-list">
+            <button class="item-btn" type="button">
+              <img class="item-img" src="./img/잘익은-고기.png" alt="">
+              <span class="item-name">잘익은 고기</span>
+              <span class="item-price">480G</span>
+              <div class="item-count">10</div>
+            </button>
+          </li>
+          <li class="item-list">
+            <button class="item-btn" type="button">
+              <img class="item-img" src="./img/약초.png" alt="">
+              <span class="item-name">약초</span>
+              <span class="item-price">200G</span>
+              <div class="item-count">10</div>
+            </button>
+          </li>
+          <li class="item-list">
+            <button class="item-btn" type="button">
+              <img class="item-img" src="./img/해독초.png" alt="">
+              <span class="item-name">해독초</span>
+              <span class="item-price">200G</span>
+              <div class="item-count">10</div>
+            </button>
+          </li>
+          <li class="item-list">
+            <button class="item-btn" type="button">
+              <img class="item-img" src="./img/할라피뇨.png" alt="">
+              <span class="item-name">할라피뇨</span>
+              <span class="item-price">140G</span>
+              <div class="item-count">10</div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="purchase-wrap">
+      <div id="my-money">
+        <h2 class="money">소지금</h2>
+        <p>100G</p>
+      </div>
+      <div id="shopping-list">
+        <h2>주문 목록</h2>
+          <ul>
+            <li class="shopped-list">
+              <img src="./img/회복약.png" alt="">
+              <p>회복약</p>
+              <span class="shopped-list-count">2개</span>
+              <div class="list-count-ctrl">
+                <button type="button" class="count-up">▲</button>
+                <button type="button" class="count-down">▼</button>
+              </div>
+              <span class="shopped-list-price">1600G</span>
+              <button type="button" class="cancel-btn">
+                X<span class="a11y-hidden">주문 취소</span>
+              </button>
+            </li>
+            <li class="shopped-list">
+              <img src="./img/해독약.png" alt="">
+              <p>해독약</p>
+              <span class="shopped-list-count">2개</span>
+              <div class="list-count-ctrl">
+                <button type="button" class="count-up">▲</button>
+                <button type="button" class="count-down">▼</button>
+              </div>
+              <span class="shopped-list-price">1200G</span>
+              <button type="button" class="cancel-btn">
+                X<span class="a11y-hidden">주문 취소</span>
+              </button>
+            </li>
+            <li class="shopped-list">
+              <img src="./img/덜익은-고기.png" alt="">
+              <p>덜익은 고기</p>
+              <span class="shopped-list-count">10개</span>
+              <div class="list-count-ctrl">
+                <button type="button" class="count-up">▲</button>
+                <button type="button" class="count-down">▼</button>
+              </div>
+              <span class="shopped-list-price">3000G</span>
+              <button type="button" class="cancel-btn">
+                X<span class="a11y-hidden">주문 취소</span>
+              </button>
+            </li>
+          </ul>
+        <button type="button" class="purchase-btn">구매</button>
+      </div>
+      <div id="pocket-list">
+        <h2>주머니</h2>
+        <button type="button" class="all-sel">일괄 판매</button>
+        <ul>
+          <li class="pocket-item-list">
+            <div class="pocket-item-count">10</div>
+            <img class="pocket-item-img" src="./img/금광석.png" alt="">
+            <p class="pocket-item-name">금광석</p>
+            <button class="pocket-item-btn" type="button">판매</button>
+          </li>
+          <li class="pocket-item-list">
+            <div class="pocket-item-count">10</div>
+            <img class="pocket-item-img" src="./img/몬스터-비늘.png" alt="">
+            <p class="pocket-item-name">몬스터 비늘</p>
+            <button class="pocket-item-btn" type="button">판매</button>
+          </li>
+          <li class="pocket-item-list">
+            <div class="pocket-item-count">10</div>
+            <img class="pocket-item-img" src="./img/몬스터-가죽.png" alt="">
+            <p class="pocket-item-name">몬스터 가죽</p>
+            <button class="pocket-item-btn" type="button">판매</button>
+          </li>
+          <li class="pocket-item-list">
+            <div class="pocket-item-count">1</div>
+            <img class="pocket-item-img" src="./img/몬스터-역린.png" alt="">
+            <p class="pocket-item-name">몬스터 역린</p>
+            <button class="pocket-item-btn" type="button">판매</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="./index.js"></script>
+</body>
+</html>
