@@ -72,20 +72,20 @@ h1 {
   margin-bottom: 10px;
   font-size: 4em;
 }
-#shopping-container ul {
+.item-shopping {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
 }
 .item-btn {
-  background-color: #C6A175;
+  background-color: #fff;
   width: 100%;
   border-radius: 5px;
   box-shadow: 3px 3px 10px ;
   padding: 10px;
   position: relative;
 }
-.item-btn div {
+.item-btn strong {
   font-size: 20px;
   width: 20px;
   height: 20px;
@@ -97,7 +97,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #B9824F;
+  background-color: #fff;
 }
 .item-btn img {
   width: 42px;
@@ -139,9 +139,9 @@ h1 {
   /* box-shadow: inset 0 0 10px orange; */
   background: url(./img/section3-1.png) no-repeat 0 0 / 100% 100%;
 }
-#my-money {
+.my-money {
   /* box-shadow: inset 0 0 10px darkblue; */
-  background-color: #D4B9A0;
+  background: url(./img/old_paper_bg2.png) no-repeat 0 0 /cover;
   border-radius: 10px;
   /* width: 100%; */
 }
@@ -149,8 +149,8 @@ h1 {
 #pocket-list {
   padding: 10px;
   box-sizing: border-box;
-  background-color: #D4B9A0;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+  background: url(./img/old_paper_bg2.png);
+  /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6); */
   border-radius: 10px;
 }
 #shopping-list {
@@ -170,12 +170,12 @@ h2 {
 /* /purchase-wrap layout */
 
 /* my-money */
-#my-money {
+.my-money {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-#my-money p {
+.my-money p {
   font-size: 2em;
 }
 /* /my-money */
@@ -184,8 +184,6 @@ h2 {
 #shopping-list ul {
   padding: 10px;
   box-sizing: border-box;
-  background-color: #C6A175;
-  /* box-shadow: inset 0 0 10px greenyellow; */
   overflow-y: auto;
   height: 129px;
 }
@@ -193,8 +191,9 @@ h2 {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  background-color: #B9824F;
   /* box-shadow: inset 0 0 10px darkgreen; */
+  border-bottom: 2px solid black;
+  border-radius: 1px;
   width: 100%;
   position: relative;
 }
@@ -239,14 +238,11 @@ h2 {
   position: absolute;
   right: 6px;
 }
-.purchase-btn {
+.ordered-btn {
   /* box-shadow: inset 0 0 10px black; */
   font-size: 2.5em;
   margin-top: auto;
-  background-color: #C6A175;
-}
-.purchase-btn:active {
-  background-color: #B9824F;
+  text-decoration: underline;
 }
 /* /shopping-list */
 
@@ -261,11 +257,8 @@ h2 {
   font-size: 2em;
   padding: 5px;
   /* box-shadow: inset 0 0 10px black; */
-  background-color: #C6A175;
 }
-#pocket-list .all-sel:active {
-  background-color: #B9824F;
-}
+
 #pocket-list ul {
   box-sizing: border-box;
   /* box-shadow: inset 0 0 10px orange; */
@@ -276,21 +269,21 @@ h2 {
   grid-template-rows: .5fr; /* 이거 문제였음 기록할 것! */
   gap: 12px;
   overflow-y: auto;
-  background-color: #C6A175;
 }
 .pocket-item-list {
   width: 74%;
-  background-color: #B9824F;
+  background-color: #fff;
   border-radius: 5px;
   box-shadow: 3px 3px 10px ;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 4px;
   position: relative;
 }
-.pocket-item-list div {
+.pocket-item-list strong {
   font-size: 20px;
   width: 20px;
   height: 20px;
@@ -302,7 +295,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #C6A175;
+  background-color: #fff;
 }
 .pocket-item-img {
   width: 32px;
@@ -315,12 +308,64 @@ h2 {
 }
 /* /pocket-list */
 
+/* bill-container */
+#bill-wrap {
+  display: none;
+  /* box-shadow: inset 0 0 10px red; */
+  background: url(./img/section3-1.png) no-repeat 0 0 / 100% 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 390px;
+  padding: 40px;
+}
+.bill-container {
+  background: url(./img/old_paper_bg2.png);
+  border-radius: 10px;
+}
+.pocket-money,
+.total-price,
+.pay-price,
+.balance {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2em;
+}
+.pocket-money h3,
+.total-price h3,
+.pay-price h3,
+.balance h3 {
+  font-size: 3em;
+}
+.pocket-money p,
+.total-price p,
+.pay-price p,
+.balance p {
+  font-size: 2.5em;
+}
+.purchase-btn {
+  /* box-shadow: inset 0 0 10px black; */
+  font-size: 5em;
+  margin: 10px auto;
+  text-decoration: underline;
+  text-align: center;
+  display: block;
+}
+/* /bill-container */
 
-/* 
-추가할것
-1. 품절 하나 넣기
-2. 주문목록 li의 요소들의 위치 고정시키기
-2.1 주문목록 li의 요소 글자크기 키우기
-2.2 주문목록 li의 갯수 화살표로 제어하기
-3. 주머니 아이템이 4개 이하일때 높이값 고정시키기
-*/
+/* sell-wrap */
+#sell-wrap {
+  display: none;
+  box-shadow: inset 0 0 10px red;
+  background: url(./img/section3-1.png) no-repeat 0 0 / 100% 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 390px;
+  padding: 40px;
+}
+
+/* sell-wrap */

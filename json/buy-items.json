@@ -1,0 +1,86 @@
+[
+  { 
+    "name": "회복약",
+    "price": 800,
+    "img": "회복약.png",
+    "count": 10,
+    "sell": 720
+  },
+  {
+    "name": "해독약",
+    "price": 600,
+    "img": "해독약.png",
+    "count": 10,
+    "sell": 540
+  },
+  {
+    "name": "귀인약",
+    "price": 670,
+    "img": "귀인약.png",
+    "count": 10,
+    "sell": 603
+  },
+  {
+    "name": "경화약",
+    "price": 580,
+    "img": "경화약.png",
+    "count": 10,
+    "sell": 522
+  },
+  {
+    "name": "강주약",
+    "price": 290,
+    "img": "강주약.png",
+    "count": 10,
+    "sell": 261
+  },
+  {
+    "name": "영양제",
+    "price": 250,
+    "img": "영양제.png",
+    "count": 10,
+    "sell": 225
+  },
+  {
+    "name": "생고기",
+    "price": 200,
+    "img": "생고기.png",
+    "count": 10,
+    "sell": 180
+  },
+  {
+    "name": "덜익은 고기",
+    "price": 300,
+    "img": "덜익은-고기.png",
+    "count": 10,
+    "sell": 270
+  },
+  {
+    "name": "잘익은 고기",
+    "price": 480,
+    "img": "잘익은-고기.png",
+    "count": 10,
+    "sell": 432
+  },
+  {
+    "name": "약초",
+    "price": 200,
+    "img": "약초.png",
+    "count": 10,
+    "sell": 180
+  },
+  {
+    "name": "해독초",
+    "price": 200,
+    "img": "해독초.png",
+    "count": 10,
+    "sell": 180
+  },
+  {
+    "name": "할라피뇨",
+    "price": 140,
+    "img": "할라피뇨.png",
+    "count": 10,
+    "sell": 126
+  }
+]
